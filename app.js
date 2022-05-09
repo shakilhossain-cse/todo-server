@@ -4,7 +4,7 @@ const connectDB = require('./config/db');
 const errorHandeller = require('./middleware/errorHandeller');
 const notFound = require('./middleware/not-found');
 const app = express();
-const port = process.env.PORT | 4000;
+const port = process.env.PORT || 4000;
 const TaskRoute = require('./routes/task.route');
 
 
