@@ -11,7 +11,7 @@ const getAllTask = asyncWrapper(async (req, res) => {
 
 const createNewTask = asyncWrapper(async (req, res) => {
   const task = await taskModel.create(req.body);
-  res.status(201).json({ task });
+  res.status(201).json({ msg: "Task Added" });
 });
 
 const getSingleTask = asyncWrapper(async (req, res, next) => {
